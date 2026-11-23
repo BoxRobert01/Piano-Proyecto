@@ -1,0 +1,158 @@
+
+/* ESTILO GENERAL */
+
+body {
+    background: #A9A9A9;
+    font-family: "Quantico", sans-serif;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+/* CONTENEDOR DEL PIANO */
+
+.piano {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    max-width: 100%;
+    margin: 15px auto;
+}
+
+/* ESTILO GENERAL DE LAS TECLAS */
+
+.tecla {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+/* TECLAS BLANCAS */
+
+.blanca {
+    width: 80px;
+    height: 250px;
+    background: white;
+    border: 1px solid #555;
+    border-radius: 0 0 8px 8px;
+    color: black;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+    flex-shrink: 0;
+}
+
+/* TECLAS NEGRAS */
+
+.negra {
+    width: 50px;
+    height: 150px;
+    background: #111;
+    color: white;
+
+    margin-left: -25px;
+    margin-right: -25px;
+    z-index: 2;
+    border-radius: 0 0 10px 10px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+/* TECLAS ACTIVAS */
+
+.blanca:active,
+.blanca.piano-note-active {
+    background: #b9e7ff;
+}
+
+.negra:active,
+.negra.piano-note-active {
+    background: #666;
+}
+
+/* CONTENEDOR DE CANCIONES */
+
+.piano-lesson {
+    width: 800px;
+    max-width: 100%;
+    margin: 18px auto;
+    font: 14px system-ui, sans-serif;
+}
+
+/* CONTROLES */
+
+.piano-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.piano-controls button,
+.piano-controls select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ZONA DE ANIMACION */
+
+.piano-lane {
+    width: 100%;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+    background: #bbdfe8;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+/* LINEA DE LAS NOTAS */
+
+.piano-lane .hit-line {
+    position: absolute;
+    top: 310px;
+    width: 100%;
+    border-top: 3px solid #ffcf55;
+}
+
+/* BLOQUES MUSICALES */
+
+.piano-note {
+    position: absolute;
+    top: 0;
+    border-radius: 4px;
+    background: #7dd3fc;
+    border: 1px solid #02c757;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 11px;
+    color: #432110;
+    font-weight: 700;
+
+    will-change: transform;
+}
+/* NOTAS COMPLETADAS */
+
+.piano-note.done {
+    display: none;
+}
+
+/* MENSAJES DEL JUEGO */
+
+.piano-status {
+    margin: 8px 0;
+    min-height: 20px;
+}
+
+

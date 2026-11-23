@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Virtual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Piano Proyecto</h1>
+
+
+<section class="piano-lesson">
+
+    <div class="piano-controls">
+
+        <select id="songSelect">
+            <option value="twinkle">Twinkle, Twinkle, Little Star</option>
+            <option value="ode-to-joy">Ode to Joy</option>
+            <option value="fur-elise">Für Elise</option>
+        </select>
+
+        <button id="startBtn" type="button">
+            Iniciar canción
+        </button>
+
+        <button id="stopBtn" type="button">
+            Detener
+        </button>
+
+    </div>
+
+</section>
+
+
+    <div class="piano">
+        <div class="tecla blanca" data-pitch="C4">A</div>
+        <div class="tecla negra" data-pitch="C#4">W</div>
+        <div class="tecla blanca" data-pitch="D4">S</div>
+        <div class="tecla negra" data-pitch="D#4">E</div>
+        <div class="tecla blanca" data-pitch="E4">D</div>
+        <div class="tecla blanca" data-pitch="F4">F</div>
+        <div class="tecla negra" data-pitch="F#4">T</div>
+        <div class="tecla blanca" data-pitch="G4">G</div>
+        <div class="tecla negra" data-pitch="G#4">Y</div>
+        <div class="tecla blanca" data-pitch="A4">H</div>
+        <div class="tecla negra" data-pitch="A#4">U</div>
+        <div class="tecla blanca" data-pitch="B4">J</div>
+        <div class="tecla blanca" data-pitch="C5">K</div>
+        <div class="tecla negra" data-pitch="C#5">O</div>
+        <div class="tecla blanca" data-pitch="D5">L</div>
+        <div class="tecla negra" data-pitch="D#5">P</div>
+        <div class="tecla blanca" data-pitch="E5">;</div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
